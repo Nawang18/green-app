@@ -19,7 +19,8 @@ if not GEMINI_API_KEY:
     st.stop()
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")  # free tier, 1500 req/day
+model = genai.GenerativeModel("gemini-1.5-flash-latest")
+#model = genai.GenerativeModel("gemini-1.5-flash")  # free tier, 1500 req/day
 
 # ── Load credit database ──────────────────────────────────────────────────────
 @st.cache_data
