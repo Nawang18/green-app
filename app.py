@@ -19,7 +19,7 @@ if not GEMINI_API_KEY:
     st.stop()
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = model="gemini-2.0-flash"
+model = "gemini-2.0-flash"
 #model = genai.GenerativeModel("gemini-1.5-flash-latest")
 #model = genai.GenerativeModel("gemini-1.5-flash")  # free tier, 1500 req/day
 
